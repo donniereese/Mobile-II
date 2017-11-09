@@ -1,20 +1,14 @@
 import React from 'react';
 import { StyleSheet, Text, View, ScrollView, StatusBar } from 'react-native';
+import { StackNavigator } from 'react-navigation';
 //import SearchBar from './components/SearchBar';
 //import PostItem from './components/PostItem';
-
+import RootNavigator from './components/RootNavigator.js';
 
 export default class App extends React.Component {
   render() {
     return (
-      <View style={styles.container}>
-        <StatusBar
-          backgroundColor="blue"
-          barStyle="light-content"
-          hidden={true}
-        />
-       <Text>Banana!</Text>
-      </View>
+      <RootNavigator />
     );
   }
 }
